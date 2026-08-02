@@ -1,0 +1,57 @@
+{
+  "name": "driveflow-rentals",
+  "version": "2.0.0",
+  "private": true,
+  "description": "DriveFlow Advanced Business Vehicle Rental Management System",
+  "keywords": [
+    "driveflow",
+    "car-rental",
+    "vehicle-rental",
+    "booking",
+    "fleet-management",
+    "express",
+    "nodejs"
+  ],
+  "author": "DriveFlow",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo \"No build step required\"",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
